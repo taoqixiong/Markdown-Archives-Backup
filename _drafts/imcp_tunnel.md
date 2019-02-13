@@ -1,5 +1,7 @@
+---
 title: 搭建 IMCP 隧道
 author: 梓喵
+abbrlink: 11725
 date: 2018-07-01 00:23:00
 tags:
 ---

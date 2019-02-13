@@ -1,9 +1,11 @@
+---
 title: Cubieboard2 安装 Lxde 桌面
 author: 梓喵
 tags:
   - Cubieboard2
   - 折腾
 categories: []
+abbrlink: 38685
 date: 2017-05-25 12:52:00
 ---
 ### 安装显卡驱动

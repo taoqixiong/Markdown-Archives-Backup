@@ -1,9 +1,11 @@
+---
 title: Archlinux 安装 VNC 服务端
 author: 梓喵
 tags:
   - Archlinux
   - 折腾
 categories: []
+abbrlink: 51311
 date: 2017-05-29 01:40:00
 ---
 ### 安装 tigervnc 

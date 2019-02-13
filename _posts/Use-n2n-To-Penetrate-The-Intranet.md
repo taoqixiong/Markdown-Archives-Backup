@@ -1,8 +1,10 @@
+---
 title: 使用 n2n 穿透内网
 author: 梓喵
 tags:
   - 折腾
 categories: []
+abbrlink: 61570
 date: 2018-02-12 15:58:00
 ---
 ## 介绍
