@@ -5,8 +5,9 @@ tags:
 categories: []
 abbrlink: 53555
 date: 2019-04-26 15:00:00
+cover: 'https://i.loli.net/2019/10/06/tJhENHkTfrPlIQW.jpg'
 ---
-## 介绍
+# 介绍
 
 Tinc VPN 是一个轻量型的 GNU 协议下的开源软件，通过隧道以及加密技术在互联网点与点之间创立隧道。VPN 是 IP 层面上的，所以可以像普通的网络设备那样，不需要去适配其他已经存在的软件。所以他就可以很安全的在点与点之间传输数据，并不需要担心泄露。他还有其他几大的特点：
 
@@ -19,11 +20,11 @@ Tinc VPN 是一个轻量型的 GNU 协议下的开源软件，通过隧道以及
 
 (上面的内容基本就是官网首页的一个简单的翻译，官方网站：<https://www.tinc-vpn.org/>)
 
-## 源码
+# 源码
 
 <https://tinc-vpn.org/git/tinc>
 
-## 安装
+# 安装
 
 Debian/Ubuntu
 
@@ -61,9 +62,9 @@ MacOS
 brew install tinc --devel
 ```
 
-## 配置
+# 配置
 
-### 目录结构
+## 目录结构
 
 ```list
 /etc/tinc
@@ -77,6 +78,16 @@ brew install tinc --devel
     └── tinc-up
 ```
 
+<<<<<<< HEAD
+=======
+
+- `/etc/tinc/dock` 目录下的文件都属于`dock`这个网络
+- `/etc/tinc/dock/hosts` 目录是存放其他用户或者说是其他网络的`public key`以及他们的 ip 地址
+- `rsa_key.priv` 本网络的私钥
+- `tinc.conf` 本网络的配置文件
+- `tinc-down` 本网络关闭时执行的脚本
+- `tinc-up` 本网络启动时执行的脚本
+>>>>>>> 6709c2f6bda9a8b3d78327611bbc6914ff222a4a
 
 - `/etc/tinc/dock` 目录下的文件都属于`dock`这个网络
 - `/etc/tinc/dock/hosts` 目录是存放其他用户或者说是其他网络的`public key`以及他们的 ip 地址
@@ -85,7 +96,7 @@ brew install tinc --devel
 - `tinc-down` 本网络关闭时执行的脚本
 - `tinc-up` 本网络启动时执行的脚本
 
-### 服务端配置
+## 服务端配置
 
 首先开启 Linux 转发，在`/etc/sysctl.conf`设置`net.ipv4.ip_forward = 1`，并通过`sysctl -p`来应用配置。
 
@@ -151,7 +162,7 @@ tincd -n dock -K4096
 
 公钥自动添加到`hosts`文件夹内的节点配置文件
 
-### 客户端配置
+## 客户端配置
 
 客户端的`tinc.conf`与服务器的参数基本上相同，只需要修改`Name`
 
@@ -171,7 +182,11 @@ tincd -n dock -K4096
 
 将服务端的节点配置文件放到客户端的`hosts`文件夹内，并将客户端的节点配置文件放到服务端的`hosts`文件夹内
 
+<<<<<<< HEAD
+# 运行
+=======
 ## 运行
+>>>>>>> 6709c2f6bda9a8b3d78327611bbc6914ff222a4a
 
 后台启动
 
@@ -202,7 +217,7 @@ tincd -n dock -D -d 3
 tincd.exe -n dock -D -d 3
 ```
 
-## 参考来源
+# 参考来源
 
 - <https://imlonghao.com/46.html>
 - <https://blog.zjustin.me/post/tinc-memo/>
