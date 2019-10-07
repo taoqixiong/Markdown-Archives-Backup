@@ -4,8 +4,8 @@ tags:
   - 折腾
 categories: []
 abbrlink: 53555
-date: 2019-04-26 15:00:00
 cover: 'https://i.loli.net/2019/10/06/tJhENHkTfrPlIQW.jpg'
+date: 2019-04-26 15:00:00
 ---
 # 介绍
 
@@ -78,16 +78,6 @@ brew install tinc --devel
     └── tinc-up
 ```
 
-<<<<<<< HEAD
-=======
-
-- `/etc/tinc/dock` 目录下的文件都属于`dock`这个网络
-- `/etc/tinc/dock/hosts` 目录是存放其他用户或者说是其他网络的`public key`以及他们的 ip 地址
-- `rsa_key.priv` 本网络的私钥
-- `tinc.conf` 本网络的配置文件
-- `tinc-down` 本网络关闭时执行的脚本
-- `tinc-up` 本网络启动时执行的脚本
->>>>>>> 6709c2f6bda9a8b3d78327611bbc6914ff222a4a
 
 - `/etc/tinc/dock` 目录下的文件都属于`dock`这个网络
 - `/etc/tinc/dock/hosts` 目录是存放其他用户或者说是其他网络的`public key`以及他们的 ip 地址
@@ -182,11 +172,7 @@ tincd -n dock -K4096
 
 将服务端的节点配置文件放到客户端的`hosts`文件夹内，并将客户端的节点配置文件放到服务端的`hosts`文件夹内
 
-<<<<<<< HEAD
 # 运行
-=======
-## 运行
->>>>>>> 6709c2f6bda9a8b3d78327611bbc6914ff222a4a
 
 后台启动
 

@@ -4,6 +4,8 @@ abbrlink: 63536
 date: 2017-03-21 20:27:35
 tags:
 ---
+
+
 代码测试
 ```bash
 sudo -i
@@ -19,6 +21,6 @@ pdf测试
 
 表格测试
 
-header1 | header2 | header3
-------------|--------------|-----------
-cell1 | cell2 | cell 3
+header1 | header2 | header3 | header4
+:-:|:-:|:-:|:-:
+cell1 | cell2 | cell 3 | cell 4

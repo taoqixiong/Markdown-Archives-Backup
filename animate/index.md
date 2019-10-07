@@ -1,10 +1,12 @@
 title: 补番列表
+hide_copyright: true
 date: 2017-07-29 13:33:40
+comments: true
+cover: 'https://i.loli.net/2019/10/06/wyeinBsukvTSOc2.jpg'
 ---
 <style type="text/css">
 	table {
 		width: 100%;
-		max-width: 65em;
 		table-layout: fixed;
 		border: 1px solid #dedede;
 		margin: 15px auto;
@@ -16,7 +18,7 @@ date: 2017-07-29 13:33:40
 	}
 </style>
 
-个人偏向于轻百合和日常类番，热血类番不太敏感，有点反感后宫类和卖肉的番。如果有什么好的番推荐可以在下面留言。
+个人偏向于轻百合和日常类番，热血类番不太敏感，有点反感后宫类和卖肉的番。
 
 已看完|未补完|追番|未确定
 :-:|:-:|:-:|:-:
@@ -94,3 +96,9 @@ ALICE or ALICE|-|-|-
 邻家索菲|-|-|-
 梅露可物语 : 无精打采的少年与瓶中|-|-|-
 BanG Dream! 少女乐团派对☆PICO|-|-|-
+天使降临到我身边|-|-|-
+巴哈姆特之怒 玛娜利亚魔法学院|-|-|-
+关于我转生变成史莱姆这档事|-|-|-
+笨拙之极的上野|-|-|-
+同居人是猫|-|-|-
+偶像大师灰姑娘剧场 第三季|-|-|-

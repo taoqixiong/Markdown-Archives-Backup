@@ -1,4 +1,3 @@
----
 title: 使用 Nginx 做 SNI 反代
 author: 梓喵
 tags:
@@ -8,6 +7,7 @@ tags:
 categories: []
 abbrlink: 7056
 date: 2017-10-08 20:04:00
+cover: 'https://i.loli.net/2019/10/06/vI2n7HAT8s4Zrh6.png'
 ---
 从 Nginx 1.11.5 版本开始支持用做 SNI 反代，使用 Nginx 做 SNI 反代比用 SNI Proxy 配置起来更简单、更稳定。
 
