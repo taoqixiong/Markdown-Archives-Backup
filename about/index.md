@@ -1,7 +1,7 @@
 title: 关于
 fancybox: false
 hide_copyright: true
-cover: 'https://i.loli.net/2019/10/06/T8qzDMxpSQc7ebm.jpg'
+cover: 'https://cdn.zimiao.moe/cover/ub4ihgy9lq08lu1.jpg'
 date: 2017-03-21 03:17:22
 ---
 # 关于我

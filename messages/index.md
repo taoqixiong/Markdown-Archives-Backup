@@ -1,6 +1,6 @@
 title: 留言板
 type: messages
-cover: 'https://i.loli.net/2019/10/06/8pxlwacvesJuQCN.jpg'
+cover: 'https://cdn.zimiao.moe/cover/54op9hckcol9bn4.jpg'
 date: 2019-09-11 18:24:40
 ---
 ## 说点什么吧～

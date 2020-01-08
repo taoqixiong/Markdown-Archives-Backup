@@ -4,7 +4,7 @@ tags:
   - 折腾
 categories: []
 abbrlink: 61570
-cover: 'https://i.loli.net/2019/10/06/SQZ6ICMDgRxTlOa.jpg'
+cover: 'https://cdn.zimiao.moe/cover/v15lsuhhyivgiul.jpg'
 date: 2018-02-12 15:58:00
 ---
 # 介绍

@@ -5,7 +5,7 @@ tags:
   - 折腾
 categories: []
 abbrlink: 38685
-cover: 'https://i.loli.net/2019/10/06/37uh9sGCMnJcStK.jpg'
+cover: 'https://cdn.zimiao.moe/cover/r4jhusron4ty24i.jpg'
 date: 2017-05-25 12:52:00
 ---
 ## 安装显卡驱动

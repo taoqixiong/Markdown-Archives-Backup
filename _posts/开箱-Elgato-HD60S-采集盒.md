@@ -5,7 +5,7 @@ tags:
  - 开箱
 categories: []
 date: 2019-10-07 12:51:00
-cover: 'https://i.loli.net/2019/10/06/hWPNrneb7qMATiV.jpg'
+cover: 'https://cdn.zimiao.moe/cover/ri0ow9kqz4r5hlo.jpg'
 ---
 # 前言
 一直有直播PS4的想法，借着炼金工房的新作快发售就入手了这个采集盒，之前有想过买圆刚的采集盒，搜了下网上的评论发现还是有不少的问题，翻了下发现有人推荐 Elgato 的采集盒，比圆刚的稳定一些，但价格比圆刚的要贵的多。在我入手 HD60S 一个多星期就出了个 HD60S+，新的采集盒支持环出 4K60 HDR10 ，能录制 1080P60 HDR10。
@@ -21,28 +21,28 @@ cover: 'https://i.loli.net/2019/10/06/hWPNrneb7qMATiV.jpg'
 - 录制的码率：达40 Mbps
 
 # 开箱
-![](https://i.loli.net/2019/10/07/vOKF6gVqC5LAc9i.jpg)
+![](https://cdn.zimiao.moe/46684/posts_46684_p0.jpg)
 <center>盒子正面</center >
 
-![](https://i.loli.net/2019/10/07/Y85WZH7nkeOX2ys.jpg)
+![](https://cdn.zimiao.moe/46684/posts_46684_p1.jpg)
 <center>盒子背面</center >
 
-![](https://i.loli.net/2019/10/07/AWz9hwr8IcyatMG.jpg)
+![](https://cdn.zimiao.moe/46684/posts_46684_p2.jpg)
 <center>取出里面包装，很简洁</center >
 
-![](https://i.loli.net/2019/10/07/jUAZChRGeK7lpt1.jpg)
+![](https://cdn.zimiao.moe/46684/posts_46684_p3.jpg)
 <center>上面本体，下面线材</center >
 
-![](https://i.loli.net/2019/10/07/4JO15jT3Ulmxcy8.jpg)
+![](https://cdn.zimiao.moe/46684/posts_46684_p4.jpg)
 <center>本体所有以及所有配件</center >
 
 # 简单使用
-![](https://i.loli.net/2019/10/07/FXxVj1ads5wD3SP.jpg)
+![](https://cdn.zimiao.moe/46684/posts_46684_p5.jpg)
 <center>Game Capture 界面</center >
 
 Elgato 的应用比圆刚的高级多了，自带剪辑、场景切换和闪回录制，能往回拉进度条录制，延迟方面玩玩 RPG 之类的还行，但拿来玩音游还是不太行很明显能感受到延迟，但这个官方的应用很吃性能，我笔记本i5 8400+GTX1060 的 CPU 占用 50% GPU占用 15% ，其中还是有一点小问题在全屏状态下比窗口模式下的延迟要高很多。
 
-![](https://i.loli.net/2019/10/07/6s7BwuFlcbtE85M.jpg)
+![](https://cdn.zimiao.moe/46684/posts_46684_p6.jpg)
 <center>初音ミク Project DIVA Future Tone DX</center >
 
 # 最后

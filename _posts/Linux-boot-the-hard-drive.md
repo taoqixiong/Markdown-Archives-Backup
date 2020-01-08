@@ -6,7 +6,7 @@ tags:
 categories: []
 abbrlink: 18671
 date: 2017-05-26 00:33:00
-cover: 'https://i.loli.net/2019/10/06/qljrxwAaNM5L6Uk.jpg'
+cover: 'https://cdn.zimiao.moe/cover/shvg4uby4qktktd.jpg'
 ---
 在 /etc/fstab 中添加
 ```bash
