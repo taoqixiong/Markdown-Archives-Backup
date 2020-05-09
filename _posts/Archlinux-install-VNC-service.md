@@ -5,7 +5,7 @@ tags:
   - 折腾
 categories: []
 abbrlink: 51311
-cover: 'https://cdn.zimiao.moe/cover/wb7he66pqd3sual.jpg'
+cover: 'https://zimiao.moe/images/cover/wb7he66pqd3sual.jpg'
 date: 2017-05-29 01:40:00
 ---
 ## 安装 tigervnc 

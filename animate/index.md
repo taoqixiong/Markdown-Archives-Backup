@@ -2,7 +2,7 @@ title: 补番列表
 hide_copyright: true
 date: 2017-07-29 13:33:40
 comments: true
-cover: 'https://cdn.zimiao.moe/cover/lhgg48e8hzd4hr9.jpg'
+cover: 'https://zimiao.moe/images/cover/lhgg48e8hzd4hr9.jpg'
 ---
 <style type="text/css">
 	table {

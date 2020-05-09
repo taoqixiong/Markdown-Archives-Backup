@@ -5,7 +5,7 @@ tags:
   - 折腾
 categories: []
 abbrlink: 11941
-cover: 'https://cdn.zimiao.moe/cover/fkp1ybb1l9n12fo.jpg'
+cover: 'https://zimiao.moe/images/cover/fkp1ybb1l9n12fo.jpg'
 date: 2017-03-21 21:31:00
 ---
 最近从某宝搞到一块二手 2.5 英寸硬盘，摸出吃灰已久的 CB2 板，用来做家里的低功耗下载机，由于当时买的是 nano 版可刷的系统比较少，所以选择用 SD 卡来装系统。

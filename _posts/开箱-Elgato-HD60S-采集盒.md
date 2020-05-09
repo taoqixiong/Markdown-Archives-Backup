@@ -5,7 +5,7 @@ tags:
  - 开箱
 categories: []
 date: 2019-10-07 12:51:00
-cover: 'https://cdn.zimiao.moe/cover/ri0ow9kqz4r5hlo.jpg'
+cover: 'https://zimiao.moe/images/cover/ri0ow9kqz4r5hlo.jpg'
 ---
 # 前言
 一直有直播PS4的想法，借着炼金工房的新作快发售就入手了这个采集盒，之前有想过买圆刚的采集盒，搜了下网上的评论发现还是有不少的问题，翻了下发现有人推荐 Elgato 的采集盒，比圆刚的稳定一些，但价格比圆刚的要贵的多。在我入手 HD60S 一个多星期就出了个 HD60S+，新的采集盒支持环出 4K60 HDR10 ，能录制 1080P60 HDR10。

@@ -5,7 +5,7 @@ tags:
   - 水
 categories: []
 abbrlink: 44799
-cover: 'https://cdn.zimiao.moe/cover/eapqh1of24msw30.jpg'
+cover: 'https://zimiao.moe/images/cover/eapqh1of24msw30.jpg'
 date: 2017-12-24 02:24:00
 ---
 博客长草这么久，就来除一下草。最近工资到手，考虑了一番最后入了台 PS4 PRO，当天下单，隔天就到了，还买了一台便携显示器。到手之后因为显示器还没发货，就没开过机，显示器足足等了我一个星期才到我手上，显示效果还算不错，不过就重了点。高三的时候还买过台宝石V，没买过几个游戏，放在柜子里面吃灰，前段时间宝石V被破解了，就从柜子里拿出来折腾一下，现在又放回柜子里继续吃灰。
