@@ -1,6 +1,6 @@
 title: 搭建 Home Assistant 智能家居环境
 author: 梓喵
-abbrlink: 
+abbrlink: 63258
 date: 2021-01-14 12:26:00
 tags:
     - 智能家居
