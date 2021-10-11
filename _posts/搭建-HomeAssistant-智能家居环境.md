@@ -1,18 +1,21 @@
+---
+
 title: 搭建 Home Assistant 智能家居环境
 author: 梓喵
 abbrlink: 63258
 date: 2021-01-14 12:26:00
 tags:
-    - 智能家居
-    - Home Assistant
-categories: []
+  - 智能家居
+  - Home Assistant
 cover: 'https://zimiao.moe/images/cover/4YSsvyZBz7EX0By.jpg'
+categories: [折腾]
+toc: true
 
 ---
 
-# 环境配置
+## 环境配置
 
-## 首先安装 Docker 环境，已安装可以跳过
+### 首先安装 Docker 环境，已安装可以跳过
 
 这里使用 Ubuntu 系统作为演示，其他系统可以根据官方文档进行安装
 
@@ -68,7 +71,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-## 修改 Docker 镜像源
+### 修改 Docker 镜像源
 
 在 `/etc/docker` 文件夹内添加 `daemon.json` 文件，并添加以下内容，可以把下面的七牛云镜像源替换成其他的镜像源
 
@@ -84,7 +87,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo systemctl restart docker
 ```
 
-# 安装 Home Assistant 环境
+## 安装 Home Assistant 环境
 
 拉取 Home Assistant 镜像
 
@@ -95,7 +98,7 @@ docker pull homeassistant/home-assistant:stable
 启动容器
 
 ```bash
-docker run -d --name="home-assistant" --net=host \
+docker run -d --name="home-assistant" --net=host --restart=always \
        -v /path/to/hass:/config \
        -v /etc/localtime:/etc/localtime:ro \
        homeassistant/home-assistant:stable
@@ -103,7 +106,7 @@ docker run -d --name="home-assistant" --net=host \
 
 过段时间打开浏览器 `http://<your_ip:8123>` 就能访问 Home Assistant 的界面
 
-# 参考来源
+## 参考来源
 
 - <https://docs.docker.com/engine/install/ubuntu/>
 - <https://www.home-assistant.io/docs/installation/docker/>

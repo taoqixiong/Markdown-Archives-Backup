@@ -1,9 +1,12 @@
 ---
+
 title: 404 Not Found：该页无法显示
 date: 2018-01-21 21:40:18
 comments: false
 fancybox: false
+
 ---
+
 <style type="text/css">
     .article-title {
         font-size: 2.1em;
@@ -52,6 +55,7 @@ fancybox: false
 </style>
 
 ***
+
 <div class="pic">
 <img src="https://i.loli.net/2017/12/24/5a3fc076d2393.gif" title="Mihawk-Wind">
 </div>

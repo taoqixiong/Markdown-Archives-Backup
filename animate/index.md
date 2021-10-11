@@ -1,19 +1,25 @@
+---
+
 title: 补番列表
 hide_copyright: true
 date: 2017-07-29 13:33:40
 comments: true
 cover: 'https://zimiao.moe/images/cover/lhgg48e8hzd4hr9.jpg'
+
 ---
+
 <style type="text/css">
 	table {
-		width: 100%;
 		table-layout: fixed;
-		border: 1px solid #dedede;
-		margin: 15px auto;
-		border-collapse: collapse;
 		empty-cells: show;
 	}
+  .markdown-body th {
+    text-align: center;
+    vertical-align: middle!important;
+  }
 	.article-entry table td:nth-child(1) {
+    text-align: center;
+    vertical-align: middle!important;
 		white-space: normal;
 	}
 </style>

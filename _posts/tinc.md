@@ -1,15 +1,18 @@
+---
+
 title: 使用 Tinc 组建大内网
 author: 梓喵
-tags:
-- 折腾
-categories: []
 abbrlink: 53555
-cover: 'https://zimiao.moe/images/cover/tvb8igg18ay8h8n.jpg'
 date: 2019-04-26 15:00:00
+tags:
+  - 内网穿透
+cover: 'https://zimiao.moe/images/cover/tvb8igg18ay8h8n.jpg'
+categories: [折腾]
+toc: true
 
-------
+---
 
-# 介绍
+## 介绍
 
 Tinc VPN 是一个轻量型的 GNU 协议下的开源软件，通过隧道以及加密技术在互联网点与点之间创立隧道。VPN 是 IP 层面上的，所以可以像普通的网络设备那样，不需要去适配其他已经存在的软件。所以他就可以很安全的在点与点之间传输数据，并不需要担心泄露。他还有其他几大的特点：
 
@@ -22,11 +25,11 @@ Tinc VPN 是一个轻量型的 GNU 协议下的开源软件，通过隧道以及
 
 (上面的内容基本就是官网首页的一个简单的翻译，官方网站：<https://www.tinc-vpn.org/>)
 
-# 源码
+## 源码
 
 <https://tinc-vpn.org/git/tinc>
 
-# 安装
+## 安装
 
 Debian/Ubuntu
 
@@ -65,9 +68,9 @@ brew install tinc --devel
 brew cask install tuntap
 ```
 
-# 配置
+## 配置
 
-## 目录结构
+### 目录结构
 
 ```list
 /etc/tinc
@@ -90,7 +93,7 @@ brew cask install tuntap
 
 客户端和服务端都需要手动新建相同的目录结构，`Windows`端无需新建`tinc-up`和`tinc-down`两个文件
 
-## 服务端配置
+### 服务端配置
 
 首先开启 Linux 转发，在`/etc/sysctl.conf`设置`net.ipv4.ip_forward = 1`，并通过`sysctl -p`来应用配置。
 
@@ -99,7 +102,7 @@ brew cask install tuntap
 ```conf
 Name = Server
 Interface = tinc
-Mode = switch
+Mode = router
 Compression=9
 Cipher  = aes-256-cbc
 Digest = sha256
@@ -138,10 +141,10 @@ chmod +x tinc-*
 
 在`hosts`文件夹内新建在`tinc.conf`设置的主机名称的节点配置文件
 
-```json
+```conf
 Subnet=10.1.3.1/32
-Address=149.129.88.238
-Port=57734
+Address=1.1.1.1
+Port=655
 ```
 
 - `Subnet` 宣告的路由地址
@@ -156,9 +159,30 @@ tincd -n dock -K4096
 
 私钥生成在与`tinc.conf`配置文件相同的文件夹，生成的公钥会自动添加到`hosts`文件夹内的节点配置文件里
 
-## 客户端配置
+### 客户端配置
 
-客户端的`tinc.conf`与服务器的参数基本上相同，只需要修改`Name`
+客户端的`tinc.conf`与服务器的参数基本上相同，只需要修改`Name`，和添加`Connectto`需要连接的主机名称
+
+```conf
+Name = Client
+Connectto = Server1
+Connectto = Server2
+Interface = tinc
+Mode = router
+Compression=9
+Cipher  = aes-256-cbc
+Digest = sha256
+PrivateKeyFile=/etc/tinc/dock/rsa_key.priv
+```
+
+- `Name` 客户端名称
+- `Connectto` 服务端名称 (可同时使用多个)
+- `Interface` 隧道所使用的网卡名称
+- `Mode` 有三种模式，分别是 `router` / `switch` / `hub` ，相对应我们平时使用到的路由、交换机、集线器 (默认模式 `router`)
+- `Compression` UDP 数据包压缩级别。可选有 0 (关闭)，1 (fast zlib) 至 9 (best zlib)，10 (fast lzo) 和 11 (best lzo)
+- `Cipher` 加密类型。可选 `aes-128-cbc` `aes-256-cbc` 等
+- `Digest` rsa 加密协议强度。可选 `sha128` `sha1` 等
+- `PrivateKeyFile` 客户端私钥的位置
 
 在`hosts`文件夹内新建在`tinc.conf`设置的主机名称的节点配置文件
 
@@ -176,9 +200,9 @@ tincd -n dock -K4096
 
 将服务端生成完公钥的节点配置文件放到客户端的`hosts`文件夹内，并将客户端生成完公钥的节点配置文件放到服务端的`hosts`文件夹内
 
-# 运行
+## 运行
 
-后台启动
+### 后台启动
 
 Windows 端需要先安装虚拟网卡，在 tinc 的安装目录下有虚拟网卡的驱动安装包，安装完成后需要将虚拟网卡名称改为与`tinc.conf`文件中的`Interface`名称相同，并且手动设置虚拟网卡的 IP 地址和子网掩码，然后进入到`tinc`的安装目录下再以管理员的身份运行，运行后会自动创建系统服务，需要停止的时候在 Windows 系统服务管理中停止服务
 
@@ -200,7 +224,7 @@ tincd -n dock -k
 tincd.exe -n dock -k
 ```
 
-调试模式
+### 调试模式
 
 ```bash
 # Linux/MacOS
@@ -211,7 +235,7 @@ tincd.exe -n dock -D -d 3
 
 注意：调试模式时无法使用`Ctrl+C`停止运行，需要输入命令`tinc -n dock -k`才能停止运行
 
-# 参考来源
+## 参考来源
 
 - <https://imlonghao.com/46.html>
 - <https://blog.zjustin.me/post/tinc-memo/>
