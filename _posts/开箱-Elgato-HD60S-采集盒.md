@@ -28,29 +28,29 @@ categories: [水]
 
 ## 开箱
 
-![](https://cdn.zimiao.moe/46684/posts_46684_p0.jpg)
+![](https://zimiao.pages.dev/46684/posts_46684_p0.jpg)
 <center>盒子正面</center >
 
-![](https://cdn.zimiao.moe/46684/posts_46684_p1.jpg)
+![](https://zimiao.pages.dev/46684/posts_46684_p1.jpg)
 <center>盒子背面</center >
 
-![](https://cdn.zimiao.moe/46684/posts_46684_p2.jpg)
+![](https://zimiao.pages.dev/46684/posts_46684_p2.jpg)
 <center>取出里面包装，很简洁</center >
 
-![](https://cdn.zimiao.moe/46684/posts_46684_p3.jpg)
+![](https://zimiao.pages.dev/46684/posts_46684_p3.jpg)
 <center>上面本体，下面线材</center >
 
-![](https://cdn.zimiao.moe/46684/posts_46684_p4.jpg)
+![](https://zimiao.pages.dev/46684/posts_46684_p4.jpg)
 <center>本体所有以及所有配件</center >
 
 ## 简单使用
 
-![](https://cdn.zimiao.moe/46684/posts_46684_p5.jpg)
+![](https://zimiao.pages.dev/46684/posts_46684_p5.jpg)
 <center>Game Capture 界面</center >
 
 Elgato 的应用比圆刚的高级多了，自带剪辑、场景切换和闪回录制，能往回拉进度条录制，延迟方面玩玩 RPG 之类的还行，但拿来玩音游还是不太行很明显能感受到延迟，但这个官方的应用很吃性能，我笔记本i5 8400+GTX1060 的 CPU 占用 50% GPU占用 15% ，其中还是有一点小问题在全屏状态下比窗口模式下的延迟要高很多。
 
-![](https://cdn.zimiao.moe/46684/posts_46684_p6.jpg)
+![](https://zimiao.pages.dev/46684/posts_46684_p6.jpg)
 <center>初音ミク Project DIVA Future Tone DX</center >
 
 ## 最后
