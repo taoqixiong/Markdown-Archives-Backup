@@ -5,7 +5,6 @@ author: 梓喵
 abbrlink: 38470
 date: 2020-05-17 17:14:30
 tags:
-  - 折腾
   - Nintendo Switch
 cover: 'https://zimiao.moe/images/cover/rv2spucgfqab95n.jpg'
 categories: [折腾]
