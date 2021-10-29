@@ -34,7 +34,7 @@ Device Drivers --->
    [*] USB Generic Serial Driver
    <*> USB Qualcomm Serial modem
    <*> USB driver for GSM and CDMA modems
- [*] Networking support --->
+ [*] Network device support --->
   <*> USB Network Adapters --->
    <*> Option USB High Speed Mobile Devices
    <*> Multi-purpose USB Networking Framework
