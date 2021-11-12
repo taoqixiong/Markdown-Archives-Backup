@@ -24,7 +24,7 @@ toc: true
 
 `注意：这里不分享 amiibbo 的 bin 文件，请自行使用搜索引擎寻找`
 
-## 准备
+## 准备 
 
 首先需要准备一台带有蓝牙的 Windows/Linux 的 PC 或者树莓派4/Zero，Windows 用户需要使用`VirtualBox`来安装桌面版的 Ubuntu 版或其他发行版本，Linux 用户则无需安装虚拟机，暂时不支持 MacOS 用户，WSL/WSL2 均不支持
 
@@ -59,8 +59,12 @@ sudo systemctl restart bluetooth
 
 ## 拉取源码
 
+最新的源码已经移除模拟nfc的功能，若想使用这个功能需要回退到支持模拟nfc的版本
+
 ```bash
 git clone https://github.com/mart1nro/joycontrol ~/joycontrol
+# 需要模拟nfc功能，执行下面命令回退到支持模拟nfc的版本
+git reset --hard bf2e7e5
 ```
 
 ## 连接
