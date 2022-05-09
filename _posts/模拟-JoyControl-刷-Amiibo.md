@@ -16,7 +16,7 @@ toc: true
 
 在某天上班摸鱼刷推的时候看到一条推
 
-![](https://zimiao.pages.dev/38470/posts_38470_p0.png)
+![](https://pic.zimiao.moe/38470/posts_38470_p0.png)
 
 原推链接：https://bit.ly/2z0m09k
 
@@ -32,7 +32,7 @@ toc: true
 
 没有安装过桌面版 Linux 需要新增一台新的虚拟机，在Windows 设置中开启蓝牙，在虚拟机的设置中找到`USB设备`，在`USB设备筛选器`中添加`USB筛选器`找到 PC 上的蓝牙适配器并添加上去。已经安装过桌面版的Linux 可以直接在设置中添加蓝牙适配器
 
-![](https://zimiao.pages.dev/38470/posts_38470_p1.png)
+![](https://pic.zimiao.moe/38470/posts_38470_p1.png)
 
 我这里是用的是苹果原装网卡的蓝牙驱动，根据自己的机器找到蓝牙驱动
 
@@ -78,7 +78,7 @@ sudo python3 ./run_controller_cli.py PRO_CONTROLLER
 
 后面可以选择模拟不同的手柄：`JOYCON_R`、`JOYCON_L`和`PRO_CONTROLLER`
 
-![](https://zimiao.pages.dev/38470/posts_38470_p2.png)
+![](https://pic.zimiao.moe/38470/posts_38470_p2.png)
 
 出现`Waitting for Switch to connect..`说明启动成功，稍等片刻，NS 会连接上模拟手柄，如果长时间未连接上，多次尝试重新运行命令或者重启模拟器。
 

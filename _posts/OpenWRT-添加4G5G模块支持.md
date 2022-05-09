@@ -161,11 +161,11 @@ rndis_host 1-1:1.0 usb0: register 'rndis_host' at usb-0000:00:14.0-1, RNDIS devi
 
 在`网络-接口`选项添加新接口
 
-![](https://zimiao.pages.dev/35234/posts_35234_p0.png)
+![](https://pic.zimiao.moe/35234/posts_35234_p0.png)
 
 使用`DHCP 客户端`协议，通常选择`以太网适配器: "usbx"`
 
-![](https://zimiao.pages.dev/35234/posts_35234_p1.png)
+![](https://pic.zimiao.moe/35234/posts_35234_p1.png)
 
 在新建接口的`防火墙设置`中把接口放进`wan`里面，保存&应用设置
 
@@ -187,15 +187,15 @@ qmi_wwan 1-1:1.5 wwan0: register 'qmi_wwan' at usb-xxxx:xx:xx.x-x, WWAN/QMI devi
 
 在`网络-接口`选项添加新接口
 
-![](https://zimiao.pages.dev/35234/posts_35234_p2.png)
+![](https://pic.zimiao.moe/35234/posts_35234_p2.png)
 
 使用`QMI 蜂窝`协议
 
-![](https://zimiao.pages.dev/35234/posts_35234_p3.png)
+![](https://pic.zimiao.moe/35234/posts_35234_p3.png)
 
 `调制解调器节点`填写找到的`/dev/cdc-wdmx`，`APN`根据 SIM 卡的运营商填写，其他无需填写
 
-![](https://zimiao.pages.dev/35234/posts_35234_p1.png)
+![](https://pic.zimiao.moe/35234/posts_35234_p1.png)
 
 在新建接口的`防火墙设置`中把接口放进`wan`里面，保存&应用设置
 有时无法拨号，可以尝试通过结束`uqmi`进程`killall uqmi`，或者重启模块
@@ -205,6 +205,22 @@ qmi_wwan 1-1:1.5 wwan0: register 'qmi_wwan' at usb-xxxx:xx:xx.x-x, WWAN/QMI devi
 ### NCM 设置
 
 手头暂时没支持的模块进行测试
+
+## 其他 AT 指令
+
+这里为 SIM820x 的 AT 指令
+
+### 重置模块
+
+```bash
+AT+CPOF
+```
+
+### 重启模块
+
+```bash
+AT+CFUN=1,1
+```
 
 ## 参考来源
 
