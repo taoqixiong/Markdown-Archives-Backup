@@ -141,6 +141,32 @@ LuCI --->
 
 ## Luci 设置
 
+### AT 指令的使用方法
+
+AT 指令可以使用`minicom`来发送 AT 指令，也可以用`echo`发送指令
+
+`minicom`软件包位置：
+
+```bash
+Utilities --->
+ Terminal --->
+  <*> minicom
+```
+
+使用`minicom`发送 AT 指令，`/dev/ttyUSBX`为模块接收 AT 指令的端口，直接在里面输入 AT 指令按回车发送
+退出`minicom`先按`Ctrl+A`后按`Q`退出软件
+
+```bash
+minicom -D /dev/ttyUSBX
+```
+
+使用`echo`发送 AT 指令，在指令末尾需加上`\n\r`，`/dev/ttyUSBX`为模块接收 AT 指令的端口，每条指令需间隔1s发送
+
+```bash
+echo -e "at\n\r">/dev/ttyUSBX
+sleep 1
+```
+
 ### RNDIS 设置
 
 需要先把模块设置成`RNIDS`模式，使用`AT`指令
@@ -208,7 +234,8 @@ qmi_wwan 1-1:1.5 wwan0: register 'qmi_wwan' at usb-xxxx:xx:xx.x-x, WWAN/QMI devi
 
 ## 其他 AT 指令
 
-这里为 SIM820x 的 AT 指令
+正常步骤不需要使用这里的指令，可以跳过
+这里为 SIM820x 的 AT 指令，不同模块使用的 AT 指令会有所不同，建议查看模块说明书
 
 ### 重置模块
 
@@ -222,8 +249,39 @@ AT+CPOF
 AT+CFUN=1,1
 ```
 
+## 开启 IPV6 支持
+
+这里是选择性开启，固件默认是关闭 IPV6 ，暂时只测试了 QMI 模式下获取 IPV6
+
+在编译的时候添加软件包`ipv6helper`
+
+`ipv6helper`软件包位置
+
+```bash
+Extra packages  --->
+ <*> ipv6helper
+```
+
+### QMI 开启 IPV6
+
+在 `/etc/config/network` 网络配置文件中找到模块对应的接口，在里面添加上
+
+```conf
+option pdptype 'IPV4V6'
+```
+
+重启网络
+
+```bash
+/etc/init.d/network restart
+```
+
+然后在 LEDE 的首页能看到`IPv6 WAN 状态`已经获取到 IPV6 地址
+
 ## 参考来源
 
 - <https://openwrt.org/docs/guide-user/network/wan/wwan/ltedongle>
 - <https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_rndis>
 - <https://openwrt.org/docs/guide-user/network/wan/wwan/ethernetoverusb_ncm>
+- <https://www.right.com.cn/forum/thread-4110883-1-1.html>
+- <https://forum.openwrt.org/t/connecting-to-ipv6-using-the-uqmi/45666/14>
