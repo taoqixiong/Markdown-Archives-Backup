@@ -3,7 +3,7 @@
 title: 关于
 fancybox: false
 hide_copyright: true
-cover: 'https://zimiao.moe/images/cover/ub4ihgy9lq08lu1.jpg'
+cover: 'https://pic.zimiao.moe/cover/ub4ihgy9lq08lu1.jpg'
 date: 2017-03-21 03:17:22
 
 ---

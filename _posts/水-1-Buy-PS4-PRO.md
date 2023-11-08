@@ -7,7 +7,7 @@ abbrlink: 44799
 date: 2017-12-24 02:24:00
 tags:
   - 水
-cover: 'https://zimiao.moe/images/cover/eapqh1of24msw30.jpg'
+cover: 'https://pic.zimiao.moe/cover/eapqh1of24msw30.jpg'
 categories: [水]
 
 ---

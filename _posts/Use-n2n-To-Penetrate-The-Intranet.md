@@ -6,7 +6,7 @@ abbrlink: 61570
 date: 2018-02-12 15:58:00
 tags:
   - 内网穿透
-cover: 'https://zimiao.moe/images/cover/v15lsuhhyivgiul.jpg'
+cover: 'https://pic.zimiao.moe/cover/v15lsuhhyivgiul.jpg'
 categories: [折腾]
 toc: true
 

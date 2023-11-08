@@ -4,7 +4,7 @@ title: Hello World
 abbrlink: 16108
 date: 2016-12-04 10:42:00
 tags: []
-cover: 'https://zimiao.moe/images/cover/2ur2ij59mf37vce.jpg'
+cover: 'https://pic.zimiao.moe/cover/2ur2ij59mf37vce.jpg'
 categories: []
 
 ---

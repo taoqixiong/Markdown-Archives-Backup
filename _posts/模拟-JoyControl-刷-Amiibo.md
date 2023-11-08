@@ -6,7 +6,7 @@ abbrlink: 38470
 date: 2020-05-17 17:14:30
 tags:
   - Nintendo Switch
-cover: 'https://zimiao.moe/images/cover/rv2spucgfqab95n.jpg'
+cover: 'https://pic.zimiao.moe/cover/rv2spucgfqab95n.jpg'
 categories: [折腾]
 toc: true
 

@@ -7,7 +7,7 @@ date: 2017-10-08 20:04:00
 tags:
   - Nginx
   - SNI
-cover: 'https://zimiao.moe/images/cover/5bu5kg7q7izudg8.png'
+cover: 'https://pic.zimiao.moe/cover/5bu5kg7q7izudg8.png'
 categories: [折腾]
 toc: true
 

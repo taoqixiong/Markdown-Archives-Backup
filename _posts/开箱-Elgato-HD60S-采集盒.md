@@ -6,7 +6,7 @@ abbrlink: 46684
 date: 2019-10-07 12:51:00
 tags: 
   - 开箱
-cover: 'https://zimiao.moe/images/cover/ri0ow9kqz4r5hlo.jpg'
+cover: 'https://pic.zimiao.moe/cover/ri0ow9kqz4r5hlo.jpg'
 categories: [水]
 
 ---

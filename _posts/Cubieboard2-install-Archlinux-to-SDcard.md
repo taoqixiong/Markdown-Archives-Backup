@@ -6,7 +6,7 @@ abbrlink: 11941
 date: 2017-03-21 21:31:00
 tags:
   - Cubieboard2
-cover: 'https://zimiao.moe/images/cover/fkp1ybb1l9n12fo.jpg'
+cover: 'https://pic.zimiao.moe/cover/fkp1ybb1l9n12fo.jpg'
 categories: [折腾]
 toc: true
 

@@ -6,7 +6,7 @@ abbrlink: 51311
 date: 2017-05-29 01:40:00
 tags:
   - Archlinux
-cover: 'https://zimiao.moe/images/cover/wb7he66pqd3sual.jpg'
+cover: 'https://pic.zimiao.moe/cover/wb7he66pqd3sual.jpg'
 categories: [折腾]
 toc: true
 

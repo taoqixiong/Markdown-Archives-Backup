@@ -7,7 +7,7 @@ date: 2021-01-14 12:26:00
 tags:
   - 智能家居
   - Home Assistant
-cover: 'https://zimiao.moe/images/cover/4YSsvyZBz7EX0By.jpg'
+cover: 'https://pic.zimiao.moe/cover/4YSsvyZBz7EX0By.jpg'
 categories: [折腾]
 toc: true
 

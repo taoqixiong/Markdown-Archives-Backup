@@ -6,7 +6,7 @@ abbrlink: 35234
 date: 2021-10-26 14:32:00
 tags:
   - OpenWRT
-cover: 'https://zimiao.moe/images/cover/C8qY84q4gVNyB6ML.jpg'
+cover: 'https://pic.zimiao.moe/cover/C8qY84q4gVNyB6ML.jpg'
 categories: [折腾]
 toc: true
 

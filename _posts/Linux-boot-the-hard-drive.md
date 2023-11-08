@@ -6,7 +6,7 @@ abbrlink: 18671
 date: 2017-05-26 00:33:00
 tags:
   - Linux
-cover: 'https://zimiao.moe/images/cover/shvg4uby4qktktd.jpg'
+cover: 'https://pic.zimiao.moe/cover/shvg4uby4qktktd.jpg'
 categories: [折腾]
 toc: true
 

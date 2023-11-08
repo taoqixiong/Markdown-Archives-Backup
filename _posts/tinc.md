@@ -6,7 +6,7 @@ abbrlink: 53555
 date: 2019-04-26 15:00:00
 tags:
   - 内网穿透
-cover: 'https://zimiao.moe/images/cover/tvb8igg18ay8h8n.jpg'
+cover: 'https://pic.zimiao.moe/cover/tvb8igg18ay8h8n.jpg'
 categories: [折腾]
 toc: true
 
