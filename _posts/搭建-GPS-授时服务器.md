@@ -25,12 +25,12 @@ abbrlink: 14454
 ![LuckFox Pico Plus 引脚图](https://wiki.luckfox.com/zh/assets/images/LUCKFOX-PICO-PLUS-GPIO-b2199af217ec733d6e12695d0e79cd60.jpg)
 
 | **开发板** | **GPS模块** |
-|:-------:|:---------:|
-| Pin 36 | VCC   |
-| Pin 8  | GND   |
-| Pin 7  | RX    |
-| Pin 6  | TX    |
-| Pin 9  | PPS   |
+|---------|-----------|
+| PIN36   | VCC       |
+| PIN8    | GND       |
+| PIN7    | RX        |
+| PIN6    | TX        |
+| PIN9    | PPS       |    
 
 # 搭建编译环境和获取Luckfox SDK
 
