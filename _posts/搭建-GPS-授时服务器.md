@@ -55,6 +55,8 @@ git clone https://gitee.com/LuckfoxTECH/luckfox-pico.git
 
 # 修改设备树
 
+虽然官方的`luckfox-config`工具能打开`UART 4`接口，但经过测试`gpsd`启动顺序比开启`UART 4`要早，导致`gpsd`无法识别模块，系统启动后需要手动重启服务，所以这里通过修改设备树开启`UART 4`接口
+
 Luckfox Pico Plus 设备树文件位置`sysdrv/source/kernel/arch/arm/boot/dts/rv1103g-luckfox-pico-plus.dts`
 
 首先需要再设备树根节点添加
@@ -248,7 +250,7 @@ Target packages  --->
 
 ## 修改`gpsd`启动脚本`/etc/init.d/S50gpsd`
 - `DEVICES`选项修改为`/dev/ttyS4 /dev/pps0`，这里设置gps模块连接开发板的`uart`和`pps`接口的位置
-- 启动命令需添加`-n`，若模块的波特率不是`9600`者需要添加`-s <模块的波特率>`，最后启动命令为`start-stop-daemon -S -q -p $PIDFILE --exec $DAEMON -- -P $PIDFILE $DEVICES -s <模块的波特率> -n && echo "OK" || echo "Failed"`
+- 启动命令需添加`-n`开启 PPS 的支持，若模块的波特率不是`9600`者需要添加`-s <模块的波特率>`，最后启动命令为`start-stop-daemon -S -q -p $PIDFILE --exec $DAEMON -- -P $PIDFILE $DEVICES -s <模块的波特率> -n && echo "OK" || echo "Failed"`
 
 完整启动脚本
 
@@ -396,9 +398,22 @@ PPS                        15   8   191     +0.008      0.133    +13ns  3178ns
 
 手动同步时间`chronyc -a makestep`
 
+# 其他设置
+
+## 固定有线网卡 Mac 地址
+
+在网卡配置文件`/etc/network/interfaces`添加
+
+```
+auto eth0
+iface eth0 inet dhcp
+hwaddress ether 1a:cf:50:33:5f:92
+```
+
 # 参考链接
 - https://wiki.luckfox.com/zh/Luckfox-Pico/Luckfox-Pico-RV1103/Luckfox-Pico-Plus-Mini/Luckfox-Pico-SDK
 - https://forums.luckfox.com/viewtopic.php?t=510
 - https://www.cnblogs.com/xiaoko/p/17199281.html
 - https://austinsnerdythings.com/2021/04/19/microsecond-accurate-ntp-with-a-raspberry-pi-and-pps-gps/
 - https://austinsnerdythings.com/2025/02/14/revisiting-microsecond-accurate-ntp-for-raspberry-pi-with-gps-pps-in-2025/
+- https://forums.luckfox.com/viewtopic.php?t=90
